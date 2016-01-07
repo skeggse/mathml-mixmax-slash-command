@@ -24,11 +24,11 @@ curl http://localhost:8080/resolver?text=2%5E2
 
 Head to the [Integration tab](https://app.mixmax.com/dashboard/integrations) over at Mixmax, and click Add Slash Command. Possible configuration:
 
-> Name: `Format Math`
-> Command: `math`
-> Parameter placeholder: `[Math]`
-> Command Parameter Suggestions API URL: `http://localhost:8080/typeahead`
-> Command Parameter Resolver API URL: `http://localhost:8080/resolver`
+- Name: `Format Math`
+- Command: `math`
+- Parameter placeholder: `[Math]`
+- Command Parameter Suggestions API URL: `http://localhost:8080/typeahead`
+- Command Parameter Resolver API URL: `http://localhost:8080/resolver`
 
 Then click Add Slash Command. Hop over to Gmail, hit compose, and try entering a math expression.
 
