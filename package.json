@@ -26,7 +26,10 @@
     "mathjax-node": "^0.4.0"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.8.1"
+  }
 }
