@@ -46,7 +46,7 @@ app.get('/typeahead', function(req, res, next) {
 
     res.json([{
       title: html,
-      text: ''
+      text: text
     }]);
   });
 });
