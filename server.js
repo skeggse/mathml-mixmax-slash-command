@@ -40,7 +40,8 @@ app.get('/typeahead', function(req, res, next) {
 
   lib.render(text, function(err, html) {
     if (err) {
-      return next(err);
+      return res.status(400)
+        .send('Malformed math expression: ' + err.message);
     }
 
     res.json([{
@@ -54,12 +55,14 @@ app.get('/resolver', function(req, res) {
   var text = req.query.text && req.query.text.trim();
 
   if (!text) {
-    return res.status(400).send('No math expression');
+    return res.status(400)
+      .send('No math expression');
   }
 
   lib.render(text, function(err, html) {
     if (err) {
-      return next(err);
+      return res.status(400)
+        .send('Malformed math expression: ' + err.message);
     }
 
     res.json({

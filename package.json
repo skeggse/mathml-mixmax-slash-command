@@ -1,7 +1,7 @@
 {
   "name": "math-mixmax-app",
   "description": "Math App for Mixmax",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Eli Skeggs <skeggse@gmail.com>",
   "repository": {
     "type": "git",
